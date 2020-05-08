@@ -1,2 +1,3 @@
 # TaskScheduler
-Allows you to schedule tasks
+
+This app allows you to schedule tasks and send reminders
