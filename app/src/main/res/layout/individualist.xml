@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:clickable="?android:attr/windowSwipeToDismiss"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/title"
+        android:textColor="#FF0B8B42"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:textColor="#FF0B8B42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_alignTop="@+id/checkbox"
+        android:text="@string/date"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_alignRight="@+id/date"
+        android:layout_marginTop="5dp"
+        android:textColor="#FF0B8B42"
+        android:text="@string/time"
+
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:layout_alignStart="@+id/checkbox"
+        android:textColor="#FF0B8B42"
+        android:layout_marginTop="5dp"
+        android:text="@string/description"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/descriptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:layout_alignTop="@+id/description"
+
+        android:textColor="#FF0B8B42"
+        android:layout_marginEnd="40dp"
+        android:layout_toEndOf="@+id/description"
+        android:text="@string/description_is_here"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+</RelativeLayout>

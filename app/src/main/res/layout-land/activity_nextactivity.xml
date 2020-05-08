@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nextactivity"
+    android:background="#FFE1FCEA"
+    >
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="#FFDC00"-->
+<!--            app:popupTheme="@style/AppTheme.PopupOverlay"-->
+<!--            app:subtitleTextColor="#000000"-->
+<!--            app:title="Set Your Task"-->
+<!--            app:titleTextColor="#000000" />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Enter Title:"
+        android:textColor="#FF0B8B42"
+        />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignLeft="@+id/editText"
+        android:inputType="textCapSentences"
+        android:ems="8"
+        android:hint="Enter the Title" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textView4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="20dp"
+        android:text="Description:"
+        android:textColor="#FF0B8B42"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_marginLeft="20dp"
+        android:ems="8"
+        android:hint="Enter Description:"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/editText4"
+        android:layout_marginLeft="20dp"
+
+        android:text="Date:"
+        android:textColor="#FF0B8B42"
+        />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView2"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toEndOf="@id/textView2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="202dp"
+        android:visibility="gone"
+        android:ems="4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textView4"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:text="Time:"
+        android:textColor="#FF0B8B42"
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView3"
+        android:layout_below="@+id/timepicker"
+        android:ems="4"
+        android:visibility="gone"
+        android:inputType="time"
+        android:hint="Time"
+        />
+
+
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/textView3"
+
+        android:timePickerMode="spinner" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timepicker"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="18dp"
+        android:onClick="oncheck"
+        android:text="Send Notification"
+        android:textColor="#FF0B8B42" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-43dp"
+        android:layout_marginEnd="263dp"
+        android:background="@color/white"
+        android:onClick="setdate"
+        android:padding="5dp"
+        android:text="Set Reminder"
+        android:textColor="#FF0B8B42" />
+
+</RelativeLayout>

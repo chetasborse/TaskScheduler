@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TaskScheduler</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="info">Info</string>
+    <string name="refresh">Refresh</string>
+    <string name="clear">Clear all tasks</string>
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_nextactivity">nextactivity</string>
+    <string name="title_activity_homeactivity">homeactivity</string>
+    <string name="title">Title</string>
+    <string name="description_is_here">Description is here</string>
+    <string name="description">Description:  </string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="res1">1. You can delete/ add/ edit tasks in Task Manager</string>
+    <string name="res2">2. You get a choice to receive notification for your each task</string>
+    <string name="res3">3. Each task turns red in color once the mentioned reminder time has passed</string>
+    <string name="task_managera">TASK MANAGER</string>
+    <string name="title_activity_whatsapp">WhatsappAct</string>
+</resources>
